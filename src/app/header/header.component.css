@@ -1,0 +1,87 @@
+#logo{
+    height:17px;
+    width:60px;
+}
+
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+form {
+   
+    display:flex;
+    flex-direction:row;
+    border-bottom:1px solid grey;
+    padding:2px;
+  }
+  
+  input {
+    border:none;
+    background-color: #f5f5f5;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+.close{
+    color:black;
+  }
+
+
+  .example-container {
+    height: 50%;
+    margin: 10px;
+  }
+
+#home{
+    color:#18a399
+}
+
+#name{
+    background-color:#18a399;
+    color:white
+}
+
+.icons{
+    margin-right: 20px;
+}
+
+#happier{
+    height:40px;
+    width:100%;
+}
+
+.profile{
+  margin: 13px;
+  
+}
+
+#notibar{
+  background-color:  #e0e0e0
+}
+
+.d-inline-block{
+  margin: 10px;
+  padding-left: 10px;
+}
+
+.read{
+  text-align: center
+}
+
+#readbtn{
+  margin:auto
+}
+
+#readmore{
+  height: 30vh;
+  padding: 50px;
+  text-align: center
+}
+
+.appbtn{
+  width: 100%;
+  margin:3px
+}
