@@ -8,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isOpen = true;
+  openSideBar = false;
   constructor() { }
 
+  opened = false
+
   ngOnInit(): void {
+  }
+
+  onClickOpen(){
+    this.openSideBar = !this.openSideBar;
   }
 
   toggleMenu(){
