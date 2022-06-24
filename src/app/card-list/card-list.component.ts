@@ -38,6 +38,18 @@ export class CardListComponent implements OnInit {
   isOpen = true;
   isDefault = true;
   isContCard = true;
+  isTutCard = false;
+  isDocCard = false;
+  docsChange = false;
+  tutsChange = false;
+  isDef2 = true;
+  isRent = false;
+  isLeaves = true;
+  isUnpaid = false;
+  isTeam = true;
+  isCompany = false;
+  isPendingReq = true;
+  isMyReq = false;
 
   constructor() { }
 
@@ -49,7 +61,7 @@ export class CardListComponent implements OnInit {
   }
 
   changeColor(){
-    this.change = !this.change;
+    // this.change = !this.change;
   }
 
   toggleMenu(){
@@ -87,7 +99,7 @@ export class CardListComponent implements OnInit {
     },
     {
       title: 'Pep',
-      img: 'https://img.icons8.com/material-outlined/384/link--v1.png'
+      img: 'https://storage.googleapis.com/happierhr-common/9c4b9852-1259-4107-8bd7-36ee47e1efaf'
     },
     {
       title: 'Talks at Searce',
@@ -128,8 +140,135 @@ export class CardListComponent implements OnInit {
 
   ];
 
+  tutorials = [
+    {
+      title: 'Mobile App',
+      img: 'https://storage.googleapis.com/happierhr-common/665ce57d-12b6-4f27-aaf8-6d3007fe4074'
+    },
+    {
+      title: 'Web',
+      img: 'https://storage.googleapis.com/happierhr-common/9904e21f-71c7-49e1-bb87-4b7d33ce223f'
+    },
+  ];
+
+  docs = [
+    {
+      title: 'FAQs | Policies',
+      img: 'https://storage.googleapis.com/happierhr-common/c8f93eac-74f6-4c62-905c-d2e56af9651b'
+    },
+    {
+      title: 'FAQS | Onboarding',
+      img: 'https://storage.googleapis.com/happierhr-common/96e1a490-9138-4b61-8014-99874519ce40'
+    },
+    {
+      title: 'FAQS | Offboarding',
+      img: 'https://storage.googleapis.com/happierhr-common/96e1a490-9138-4b61-8014-99874519ce40'
+    },
+    {
+      title: 'FAQs | happierWork',
+      img: 'https://storage.googleapis.com/happierhr-common/76949d46-a3aa-4985-b196-ed43eaa9cea5'
+    },
+    {
+      title: 'happierWork Session',
+      img: 'https://storage.googleapis.com/happierhr-common/f9d53503-3445-44a6-9d9d-050b74fd1559'
+    }
+  ];
+
+  defaults2 = [
+    {
+      title: 'Paysquare',
+      img: 'https://storage.googleapis.com/happierhr-common/c1d43e5e-663b-4101-a837-2a553b099e0b'
+    },
+    {
+      title: 'Workplace',
+      img: 'https://storage.googleapis.com/happierhr-common/4071f87b-6049-4797-b50d-a1c9fb2c5e33'
+    },
+    {
+      title: 'Helpdesk',
+      img: 'https://storage.googleapis.com/happierhr-common/bbb813e7-64ed-4190-84b0-119efd58506f'
+    },
+    {
+      title: 'Queries PS',
+      img: 'https://storage.googleapis.com/happierhr-common/7c3d441a-2cc8-4a20-bb01-e3ba75e9945d'
+    },
+  ];
+
+  rent = [
+    {
+      title: 'Rent Receipts',
+      img: 'https://img.icons8.com/material-outlined/384/link--v1.png'
+
+    }
+  ]
+
   showContCard(){
-    this.isContCard = !this.isContCard
+    this.isContCard = !this.isContCard;
+    // this.isTutCard = !this.isTutCard;
+    // this.isDocCard = !this.isDocCard;
+    this.change = !this.change;
+  }
+
+  showTutCard(){
+    this.isContCard = !this.isContCard;
+    this.isTutCard = !this.isTutCard;
+    // this.isDocCard = !this.isDocCard;
+    // this.change = !this.change;
+    this.docsChange = !this.docsChange;
+  }
+
+  showDocCard(){
+    // this.isContCard = !this.isContCard;
+    this.isTutCard = !this.isTutCard;
+    this.isDocCard = !this.isDocCard;
+    this.change = !this.change;
+    this.tutsChange = !this.tutsChange;
+
+  }
+
+  showDef2Card(){
+    this.isDef2 = !this.isDef2;
+    this.isRent = !this.isRent;
+  }
+
+  showRentCard(){
+    this.isDef2 = !this.isDef2;
+    this.isRent = !this.isRent;
+  }
+
+  showAllLeaves(){
+    this.isLeaves = !this.isLeaves;
+    this.isUnpaid = !this.isUnpaid;
+    this.change = !this.change;
+  }
+
+  showUnPaid(){
+    this.isUnpaid = !this.isUnpaid;
+    this.isLeaves = !this.isLeaves;
+    this.change = !this.change;
+  }
+
+  showTeamMembers(){
+    this.isTeam = !this.isTeam;
+    this.isCompany = !this.isCompany;
+    this.change = !this.change;
+  }
+
+  showCompanyMembers(){
+    this.isTeam = !this.isTeam;
+    this.isCompany = !this.isCompany;
+    this.change = !this.change;
+  }
+
+  showPendingReq(){
+    this.isPendingReq = !this.isPendingReq;
+    this.isMyReq = !this.isMyReq;
+    this.change = !this.change;
+  }
+
+  showMyReq(){
+    this.isPendingReq = !this.isPendingReq;
+    this.isMyReq = !this.isMyReq;
+    this.change = !this.change;
   }
 
   displayedColumns: string[] = ['date', 'name'];
