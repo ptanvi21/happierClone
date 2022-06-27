@@ -21,7 +21,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {date: "Sun, 01-Jan-2023", name: "New Year's Day"},
   {date: "Thu, 26-Jan-2023", name: "Republic Day (India)"},
   {date: "Wed, 08-Mar-2023", name: "Dhuleti (The day after Holi)"}
-  
 ];
 
 
@@ -33,6 +32,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class CardListComponent implements OnInit {
 
   selected = 'option2';
+  selected1 = 'option2';
+  selected2 = 'option2';
+  selected3 = 'option2';
   displaySend = false;
   change = true;
   isOpen = true;
@@ -50,6 +52,19 @@ export class CardListComponent implements OnInit {
   isCompany = false;
   isPendingReq = true;
   isMyReq = false;
+  isOpenSearch = false;
+  isBusiness = true;
+  isScience = false;
+  isEconomy = false;
+  isSports = false;
+  isEducation = false;
+  isTechnology = false;
+  isJobsForReferral = true;
+  isInternalJob = false;
+  isMyReferral = false;
+  isMyProj = true;
+  isOpen2 = true;
+  isdefCard = true;
 
   constructor() { }
 
@@ -66,6 +81,10 @@ export class CardListComponent implements OnInit {
 
   toggleMenu(){
     this.isOpen = !this.isOpen;
+  }
+
+  toggleMenuSearch(){
+    this.isOpenSearch = !this.isOpenSearch;
   }
 
   showDefault(){
@@ -202,22 +221,17 @@ export class CardListComponent implements OnInit {
   ]
 
   showContCard(){
-    this.isContCard = !this.isContCard;
-    // this.isTutCard = !this.isTutCard;
-    // this.isDocCard = !this.isDocCard;
+    this.isdefCard = !this.isdefCard;
     this.change = !this.change;
   }
 
   showTutCard(){
     this.isContCard = !this.isContCard;
     this.isTutCard = !this.isTutCard;
-    // this.isDocCard = !this.isDocCard;
-    // this.change = !this.change;
     this.docsChange = !this.docsChange;
   }
 
   showDocCard(){
-    // this.isContCard = !this.isContCard;
     this.isTutCard = !this.isTutCard;
     this.isDocCard = !this.isDocCard;
     this.change = !this.change;
@@ -250,13 +264,13 @@ export class CardListComponent implements OnInit {
   showTeamMembers(){
     this.isTeam = !this.isTeam;
     this.isCompany = !this.isCompany;
-    this.change = !this.change;
+    
   }
 
   showCompanyMembers(){
     this.isTeam = !this.isTeam;
     this.isCompany = !this.isCompany;
-    this.change = !this.change;
+    
   }
 
   showPendingReq(){
@@ -269,6 +283,62 @@ export class CardListComponent implements OnInit {
     this.isPendingReq = !this.isPendingReq;
     this.isMyReq = !this.isMyReq;
     this.change = !this.change;
+  }
+
+  showBusinessNews(){
+    this.isBusiness = !this.isBusiness;
+    this.isScience = !this.isScience;
+    this.isEconomy = !this.isEconomy;
+    this.isSports = !this.isSports;
+    this.isEducation = !this.isEducation;
+    this.isTechnology = !this.isTechnology;
+  }
+
+  showScienceNews(){
+    this.isScience = !this.isScience;
+    this.isBusiness = !this.isBusiness;
+  }
+
+  showEconomyNews(){
+    this.isScience = !this.isScience;
+    this.isEconomy = !this.isEconomy;
+  }
+
+  showSportsNews(){
+    this.isEconomy = !this.isEconomy;
+    this.isSports = !this.isSports;
+  }
+
+  showEducationNews(){
+    this.isSports = !this.isSports;
+    this.isEducation = !this.isEducation;
+  }
+
+  showTechnologyNews(){
+    this.isEducation = !this.isEducation;
+    this.isTechnology = !this.isTechnology;
+  }
+
+  showMyJobsForReferral(){
+    this.isJobsForReferral = !this.isJobsForReferral;
+  }
+
+  showInternalJobs(){
+    this.isJobsForReferral = !this.isJobsForReferral;
+    this.isInternalJob = !this.isInternalJob;
+  }
+
+  showMyReferral(){
+    this.isInternalJob = !this.isInternalJob;
+    this.isMyReferral = !this.isMyReferral;
+  }
+
+  showMyProj(){
+    // this.isMyProj = !this.isMyProj;
+  }
+
+  toggleMenu2(){
+    this.isOpen2 = !this.isOpen2;
   }
 
   displayedColumns: string[] = ['date', 'name'];

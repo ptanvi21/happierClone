@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   isOpen = true;
   openSideBar = false;
+  showFiller = false;
   constructor() { }
 
   opened = false

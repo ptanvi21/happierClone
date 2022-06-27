@@ -26,6 +26,7 @@ table {
     color: #fff
 }
 
+
 .val{
     color: #18a399;
     opacity: 1;
@@ -195,11 +196,17 @@ mat-button .alignitem2{
     padding-left: 250px;
 }
 
-.permedia{
-    padding-top: 50px;
+.permedia {
+    padding-top: 30px;
     padding-bottom: 90px;
     align-items: center;
     font-size:60px
+}
+
+.permediatext{
+    align-items: center;
+    font-size: 25px;
+    padding-left: 50px;
 }
 
 #leavecontents{
@@ -215,7 +222,7 @@ mat-button .alignitem2{
 
 .example-spacer {
     flex: 1 1 auto;
-    padding-left:450px
+    padding-left:45px
   }
 
   .close{
@@ -223,9 +230,8 @@ mat-button .alignitem2{
   }
 
   form {
-   
     display:flex;
-    /* flex-direction:row; */
+    flex-direction:row;
     border-bottom:1px solid white;
     /* padding:2px; */
   }
@@ -238,3 +244,60 @@ mat-button .alignitem2{
   input:focus {
     outline: none;
   } 
+
+googlesearch{
+    padding:30px
+}
+
+#addbtn{
+    padding-left: 480px;
+}
+
+#openinnew{
+    padding-left:480px
+}
+
+#searchm{
+    padding-left:200px
+}
+
+#newsbtn{
+    padding-left:500px
+}
+
+#peoplespan{
+    padding-left:400px
+
+}
+
+.side{
+    display: inline-block
+}
+
+#side2{
+    padding-left:10px
+}
+
+#side3{
+    padding: 30px
+}
+
+
+#today{
+    font-size:15px
+}
+
+#tog-ppl{
+    padding-left:250px
+}
+#tog-ppl2{
+    padding-left:250px
+}
+
+
+
+
+
+
+
+
